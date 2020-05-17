@@ -1,0 +1,8 @@
+C:\Users\root\source\repos\theCollector\theCollector\bin\Debug\theCollector.exe
+C:\Users\root\source\repos\theCollector\theCollector\bin\Debug\theCollector.pdb
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.Properties.Resources.resources
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.csproj.GenerateResource.cache
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.exe
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.pdb
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.csprojAssemblyReference.cache
+C:\Users\root\source\repos\theCollector\theCollector\obj\Debug\theCollector.MainForm.resources
