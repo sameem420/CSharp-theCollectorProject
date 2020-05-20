@@ -17,7 +17,6 @@ namespace theCollector
         SqlDataAdapter sqldba;
         string str;
         DataSet ds;
-        DataTable dt;
         public MainForm()
         {
             InitializeComponent();
@@ -39,7 +38,7 @@ namespace theCollector
         private void btn_Save_Click(object sender, EventArgs e)
         {
             
-            var movieType = comboBox1.SelectedItem.ToString();
+            var movieType = txt_movieType.SelectedItem.ToString();
             var watched = "";
             if(radiobtn_true.Checked)
             {
@@ -52,7 +51,7 @@ namespace theCollector
             String query = "INSERT INTO recTable (title,year,watched,movietype) VALUES (@title, @year, @watched, @movietype)";
             SqlCommand cmd = new SqlCommand(query, con);
             cmd.CommandType = CommandType.Text;
-            cmd.Parameters.AddWithValue("@title", txt_title.Text);
+            cmd.Parameters.AddWithValue("@title", txt_movieTitle.Text);
             cmd.Parameters.AddWithValue("@watched", watched);
             cmd.Parameters.AddWithValue("@year", txt_releaseYear.Text);
             cmd.Parameters.AddWithValue("@movietype", movieType);
