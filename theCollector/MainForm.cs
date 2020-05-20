@@ -89,7 +89,8 @@ namespace theCollector
             //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[4].ToString());
             //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[3].ToString());
             //}
-            
+
+
             string query = "SELECT * FROM recTable";
             sqldba = new SqlDataAdapter(query, con);
             ds = new DataSet();
@@ -104,6 +105,12 @@ namespace theCollector
             dataGridView1.Columns["watched"].HeaderText = "Watched";
             dataGridView1.Columns["movietype"].HeaderText = "Category";
 
+        }
+
+        private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            DataGridViewCell cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
+            if (cell.Value is double && 0 == (double)cell.Value) { e.CellStyle.ForeColor = Color.Red; }
         }
     }
 }
