@@ -15,9 +15,7 @@ namespace theCollector
     public partial class MainForm : Form
     {
         SqlConnection con = ConnectionManager.GetConnection();
-        SqlCommand com;
         SqlDataAdapter sqldba;
-        string str;
         DataSet ds;
         public MainForm()
         {
@@ -70,7 +68,7 @@ namespace theCollector
             cmd.ExecuteNonQuery();
 
             con.Close();
-            MessageBox.Show("Record Saved!","the Collector",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Record Saved!","the Collector : Movies",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void MainForm_Load(object sender, EventArgs e)

@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.txt_URL = new System.Windows.Forms.TextBox();
+            this.movie_panel = new System.Windows.Forms.Panel();
             this.txt_movieType = new System.Windows.Forms.ComboBox();
             this.txt_movieTitle = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,8 +49,10 @@
             this.radiobtn_true = new System.Windows.Forms.RadioButton();
             this.radiobtn_false = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.series_panel = new System.Windows.Forms.Panel();
             this.txt_seriesType = new System.Windows.Forms.ComboBox();
             this.txt_seriesTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,16 +65,18 @@
             this.label4 = new System.Windows.Forms.Label();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.txt_URL = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.movie_panel.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.series_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -100,43 +105,43 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Crimson;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Crimson;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.WindowFrame;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.WindowFrame;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.Location = new System.Drawing.Point(28, 335);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.GrayText;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.GrayText;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.Size = new System.Drawing.Size(851, 180);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -155,7 +160,7 @@
             // 
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tabPage1.Controls.Add(this.txt_URL);
-            this.tabPage1.Controls.Add(this.panel2);
+            this.tabPage1.Controls.Add(this.movie_panel);
             this.tabPage1.Controls.Add(this.pictureBox1);
             this.tabPage1.Controls.Add(this.label9);
             this.tabPage1.Controls.Add(this.button3);
@@ -167,24 +172,31 @@
             this.tabPage1.Text = "Movies Collection";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // txt_URL
             // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.txt_movieType);
-            this.panel2.Controls.Add(this.txt_movieTitle);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.btn_Save);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.txt_releaseYear);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.radiobtn_true);
-            this.panel2.Controls.Add(this.radiobtn_false);
-            this.panel2.Controls.Add(this.label10);
-            this.panel2.Location = new System.Drawing.Point(17, 17);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(472, 249);
-            this.panel2.TabIndex = 0;
+            this.txt_URL.Location = new System.Drawing.Point(577, 17);
+            this.txt_URL.Name = "txt_URL";
+            this.txt_URL.Size = new System.Drawing.Size(248, 20);
+            this.txt_URL.TabIndex = 23;
+            // 
+            // movie_panel
+            // 
+            this.movie_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.movie_panel.Controls.Add(this.txt_movieType);
+            this.movie_panel.Controls.Add(this.txt_movieTitle);
+            this.movie_panel.Controls.Add(this.label6);
+            this.movie_panel.Controls.Add(this.button1);
+            this.movie_panel.Controls.Add(this.btn_Save);
+            this.movie_panel.Controls.Add(this.label7);
+            this.movie_panel.Controls.Add(this.txt_releaseYear);
+            this.movie_panel.Controls.Add(this.label8);
+            this.movie_panel.Controls.Add(this.radiobtn_true);
+            this.movie_panel.Controls.Add(this.radiobtn_false);
+            this.movie_panel.Controls.Add(this.label10);
+            this.movie_panel.Location = new System.Drawing.Point(17, 17);
+            this.movie_panel.Name = "movie_panel";
+            this.movie_panel.Size = new System.Drawing.Size(450, 249);
+            this.movie_panel.TabIndex = 0;
             // 
             // txt_movieType
             // 
@@ -204,7 +216,7 @@
             "Crime",
             "Biografy",
             "Documentary"});
-            this.txt_movieType.Location = new System.Drawing.Point(134, 90);
+            this.txt_movieType.Location = new System.Drawing.Point(112, 88);
             this.txt_movieType.MaxDropDownItems = 9;
             this.txt_movieType.Name = "txt_movieType";
             this.txt_movieType.Size = new System.Drawing.Size(121, 21);
@@ -212,7 +224,7 @@
             // 
             // txt_movieTitle
             // 
-            this.txt_movieTitle.Location = new System.Drawing.Point(134, 19);
+            this.txt_movieTitle.Location = new System.Drawing.Point(112, 17);
             this.txt_movieTitle.Name = "txt_movieTitle";
             this.txt_movieTitle.Size = new System.Drawing.Size(328, 20);
             this.txt_movieTitle.TabIndex = 0;
@@ -220,7 +232,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(44, 130);
+            this.label6.Location = new System.Drawing.Point(22, 128);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 21;
@@ -228,11 +240,11 @@
             // 
             // btn_Save
             // 
-            this.btn_Save.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btn_Save.BackColor = System.Drawing.Color.Transparent;
             this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Save.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btn_Save.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Save.Location = new System.Drawing.Point(334, 187);
+            this.btn_Save.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_Save.Location = new System.Drawing.Point(312, 187);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(128, 48);
             this.btn_Save.TabIndex = 5;
@@ -243,7 +255,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(67, 93);
+            this.label7.Location = new System.Drawing.Point(45, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(34, 13);
             this.label7.TabIndex = 20;
@@ -251,7 +263,7 @@
             // 
             // txt_releaseYear
             // 
-            this.txt_releaseYear.Location = new System.Drawing.Point(134, 54);
+            this.txt_releaseYear.Location = new System.Drawing.Point(112, 52);
             this.txt_releaseYear.Name = "txt_releaseYear";
             this.txt_releaseYear.Size = new System.Drawing.Size(121, 20);
             this.txt_releaseYear.TabIndex = 1;
@@ -259,7 +271,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(69, 57);
+            this.label8.Location = new System.Drawing.Point(47, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 19;
@@ -268,7 +280,7 @@
             // radiobtn_true
             // 
             this.radiobtn_true.AutoSize = true;
-            this.radiobtn_true.Location = new System.Drawing.Point(134, 126);
+            this.radiobtn_true.Location = new System.Drawing.Point(112, 124);
             this.radiobtn_true.Name = "radiobtn_true";
             this.radiobtn_true.Size = new System.Drawing.Size(43, 17);
             this.radiobtn_true.TabIndex = 3;
@@ -279,7 +291,7 @@
             // radiobtn_false
             // 
             this.radiobtn_false.AutoSize = true;
-            this.radiobtn_false.Location = new System.Drawing.Point(134, 149);
+            this.radiobtn_false.Location = new System.Drawing.Point(112, 147);
             this.radiobtn_false.Name = "radiobtn_false";
             this.radiobtn_false.Size = new System.Drawing.Size(39, 17);
             this.radiobtn_false.TabIndex = 4;
@@ -290,16 +302,43 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 22);
+            this.label10.Location = new System.Drawing.Point(14, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 13);
             this.label10.TabIndex = 17;
             this.label10.Text = "Movie Title :";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(504, 20);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Image URL :";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
+            this.button3.Location = new System.Drawing.Point(577, 240);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(248, 34);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "Load Image";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.pictureBox2);
+            this.tabPage2.Controls.Add(this.label11);
+            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.series_panel);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -308,25 +347,25 @@
             this.tabPage2.Text = "Series Collection";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // panel1
+            // series_panel
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.txt_seriesType);
-            this.panel1.Controls.Add(this.txt_seriesTitle);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.txt_seasonNO);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.txt_relYear);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.radioButton3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.radioButton4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(17, 18);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(472, 249);
-            this.panel1.TabIndex = 0;
+            this.series_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.series_panel.Controls.Add(this.txt_seriesType);
+            this.series_panel.Controls.Add(this.txt_seriesTitle);
+            this.series_panel.Controls.Add(this.label1);
+            this.series_panel.Controls.Add(this.button2);
+            this.series_panel.Controls.Add(this.txt_seasonNO);
+            this.series_panel.Controls.Add(this.label2);
+            this.series_panel.Controls.Add(this.txt_relYear);
+            this.series_panel.Controls.Add(this.label3);
+            this.series_panel.Controls.Add(this.radioButton3);
+            this.series_panel.Controls.Add(this.label4);
+            this.series_panel.Controls.Add(this.radioButton4);
+            this.series_panel.Controls.Add(this.label5);
+            this.series_panel.Location = new System.Drawing.Point(17, 18);
+            this.series_panel.Name = "series_panel";
+            this.series_panel.Size = new System.Drawing.Size(472, 249);
+            this.series_panel.TabIndex = 0;
             // 
             // txt_seriesType
             // 
@@ -370,7 +409,9 @@
             // 
             // button2
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.button2.Location = new System.Drawing.Point(316, 185);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(130, 48);
@@ -450,35 +491,44 @@
             this.label5.TabIndex = 17;
             this.label5.Text = "TV Series Title : ";
             // 
-            // button3
+            // textBox1
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.ForeColor = System.Drawing.SystemColors.Control;
-            this.button3.Location = new System.Drawing.Point(577, 240);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(248, 34);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Load Image";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.textBox1.Location = new System.Drawing.Point(578, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(248, 20);
+            this.textBox1.TabIndex = 27;
             // 
-            // txt_URL
+            // pictureBox2
             // 
-            this.txt_URL.Location = new System.Drawing.Point(577, 17);
-            this.txt_URL.Name = "txt_URL";
-            this.txt_URL.Size = new System.Drawing.Size(248, 20);
-            this.txt_URL.TabIndex = 23;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Location = new System.Drawing.Point(578, 39);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(248, 185);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 26;
+            this.pictureBox2.TabStop = false;
             // 
-            // label9
+            // label11
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(504, 20);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(67, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Image URL :";
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(505, 16);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(67, 13);
+            this.label11.TabIndex = 25;
+            this.label11.Text = "Image URL :";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
+            this.button4.Location = new System.Drawing.Point(578, 236);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(248, 34);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "Load Image";
+            this.button4.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
@@ -499,11 +549,13 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.movie_panel.ResumeLayout(false);
+            this.movie_panel.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.tabPage2.PerformLayout();
+            this.series_panel.ResumeLayout(false);
+            this.series_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -515,7 +567,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel movie_panel;
         private System.Windows.Forms.ComboBox txt_movieType;
         private System.Windows.Forms.TextBox txt_movieTitle;
         private System.Windows.Forms.Label label6;
@@ -527,7 +579,7 @@
         private System.Windows.Forms.RadioButton radiobtn_false;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel series_panel;
         private System.Windows.Forms.ComboBox txt_seriesType;
         private System.Windows.Forms.TextBox txt_seriesTitle;
         private System.Windows.Forms.Label label1;
@@ -543,6 +595,10 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txt_URL;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button button4;
     }
 }
 
