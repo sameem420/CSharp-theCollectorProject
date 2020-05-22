@@ -22,16 +22,6 @@ namespace theCollector
             InitializeComponent();
         }
 
-        Image DownloadImage(string fromUrl)
-        {
-            using (System.Net.WebClient webClient = new System.Net.WebClient())
-            {
-                using (Stream stream = webClient.OpenRead(fromUrl))
-                {
-                    return Image.FromStream(stream);
-                }
-            }
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             bool check_connection = ConnectionManager.isServerConnected();
@@ -73,34 +63,6 @@ namespace theCollector
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // Retrieving data and displaying it in Listview
-            //listView1.Columns.Add("ID", 70, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Movie", 70, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Year", 70, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Type", 70, HorizontalAlignment.Center);
-            //listView1.Columns.Add("Watched", 70, HorizontalAlignment.Center);
-            //listView1.View = View.Details;
-            //listView1.GridLines = true;
-            //listView1.BackColor = Color.FromArgb(255,0,255);
-            //listView1.ForeColor = Color.Blue;
-            ////SqlConnection conn = ConnectionManager.GetConnection();
-            //str = "select * from recTable";
-            //com = new SqlCommand(str, con);
-            //sqldba = new SqlDataAdapter(com);
-            //ds = new DataSet();
-            //sqldbd.Fill(ds, "recTable");
-            //con.Close();
-            //dt = ds.Tables["recTable"];
-            //for (int i = 0; i <= dt.Rows.Count - 1; i++)
-            //{
-            //    listView1.Items.Add(dt.Rows[i].ItemArray[0].ToString());
-            //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[1].ToString());
-            //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[2].ToString());
-            //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[4].ToString());
-            //    listView1.Items[i].SubItems.Add(dt.Rows[i].ItemArray[3].ToString());
-            //}
-
-
             string query = "SELECT * FROM recTable";
             sqldba = new SqlDataAdapter(query, con);
             ds = new DataSet();
