@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.IO;
+using System.Net;
 
 namespace theCollector
 {
@@ -22,6 +24,16 @@ namespace theCollector
             InitializeComponent();
         }
 
+        Image DownloadImage(string fromUrl)
+        {
+            using (System.Net.WebClient webClient = new System.Net.WebClient())
+            {
+                using (Stream stream = webClient.OpenRead(fromUrl))
+                {
+                    return Image.FromStream(stream);
+                }
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             bool check_connection = ConnectionManager.isServerConnected();
@@ -111,6 +123,17 @@ namespace theCollector
         {
             DataGridViewCell cell = dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex];
             if (cell.Value is double && 0 == (double)cell.Value) { e.CellStyle.ForeColor = Color.Red; }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var request = WebRequest.Create(txt_URL.Text);
+
+            using (var response = request.GetResponse())
+            using (var stream = response.GetResponseStream())
+            {
+                pictureBox1.Image = Bitmap.FromStream(stream);
+            }
         }
     }
 }

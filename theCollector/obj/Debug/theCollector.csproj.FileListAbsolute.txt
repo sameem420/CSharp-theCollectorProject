@@ -13,3 +13,4 @@ C:\Users\root\Documents\GitHub\CSharp-theCollectorProject\theCollector\obj\Debug
 C:\Users\root\Documents\GitHub\CSharp-theCollectorProject\theCollector\obj\Debug\theCollector.csproj.GenerateResource.cache
 C:\Users\root\Documents\GitHub\CSharp-theCollectorProject\theCollector\obj\Debug\theCollector.exe
 C:\Users\root\Documents\GitHub\CSharp-theCollectorProject\theCollector\obj\Debug\theCollector.pdb
+C:\Users\root\Documents\GitHub\CSharp-theCollectorProject\theCollector\obj\Debug\theCollector.csprojAssemblyReference.cache
