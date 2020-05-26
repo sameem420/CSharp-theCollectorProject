@@ -36,8 +36,13 @@ namespace theCollector
         }
 
         private void btn_Save_Click(object sender, EventArgs e)
-        {
-            
+        { 
+            if(txt_movieTitle.Text == "" || txt_releaseYear.Text == "" || txt_movieType.SelectedItem == null)
+            {
+                MessageBox.Show("Please fill all the fields","the Collector", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else 
+            {
             var movieType = txt_movieType.SelectedItem.ToString();
             var watched = "";
             if(radiobtn_true.Checked)
@@ -59,6 +64,7 @@ namespace theCollector
 
             con.Close();
             MessageBox.Show("Record Saved!","the Collector : Movies",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
         }
 
         private void MainForm_Load(object sender, EventArgs e)
