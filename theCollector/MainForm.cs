@@ -91,14 +91,20 @@ namespace theCollector
             if (cell.Value is double && 0 == (double)cell.Value) { e.CellStyle.ForeColor = Color.Red; }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_loadImage_Click(object sender, EventArgs e)
         {
-            var request = WebRequest.Create(txt_URL.Text);
-
-            using (var response = request.GetResponse())
-            using (var stream = response.GetResponseStream())
+            if(txt_URL.Text == "")
             {
-                pictureBox1.Image = Bitmap.FromStream(stream);
+                MessageBox.Show("Image URL is empty or invalid. Please check the URL.", "the Collector", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                var request = WebRequest.Create(txt_URL.Text);
+                using (var response = request.GetResponse())
+                using (var stream = response.GetResponseStream())
+                {
+                    pictureBox1.Image = Bitmap.FromStream(stream);
+                }
             }
         }
     }
